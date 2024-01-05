@@ -1,3 +1,4 @@
+import { Modal } from "@/components/modal";
 import { PriceInfoCard } from "@/components/price-info-card";
 import { ProductCard } from "@/components/product-card";
 import { getProductById, getSimilarProducts } from "@/lib/actions";
@@ -154,7 +155,7 @@ export default async function ProductDetailsPage({
               />
             </div>
           </div>
-          Modal
+          <Modal productId={id} />
         </div>
       </div>
 
