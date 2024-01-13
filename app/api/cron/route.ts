@@ -14,7 +14,7 @@ export const maxDuration = 10;
 export const dynamic = "force-dynamic";
 export const revalidate = 0;
 
-export async function GET() {
+export async function GET(req: Request) {
   try {
     connectToDB();
     const products = await Product.find({});
